@@ -1,3 +1,4 @@
+// eslint-disable-next-line func-names
 (function () {
   window.Whisper = window.Whisper || {};
 
