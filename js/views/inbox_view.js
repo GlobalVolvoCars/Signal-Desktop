@@ -163,7 +163,6 @@
       selectAContact: i18n('selectAContact'),
       searchForPeopleOrGroups: i18n('searchForPeopleOrGroups'),
       settings: i18n('settings'),
-      restartSignal: i18n('restartSignal'),
     },
     events: {
       click: 'onClick',
@@ -173,7 +172,6 @@
       'click .showSettings': 'showSettings',
       'select .gutter .conversation-list-item': 'openConversation',
       'input input.search': 'filterContacts',
-      'click .restart-signal': window.restart,
       'show .lightbox': 'showLightbox',
     },
     startConnectionListener() {
