@@ -162,7 +162,7 @@
     },
 
     maybeNumber(number) {
-      return number.replace(/[\s-.\(\)]*/g, '').match(/^\+?[0-9]*$/);
+      return number.replace(/[\s-.()]*/g, '').match(/^\+?[0-9]*$/);
     },
   });
 }());
