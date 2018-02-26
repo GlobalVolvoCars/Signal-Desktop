@@ -1,3 +1,10 @@
+/* global ConversationController: false */
+/* global extension: false */
+/* global getInboxCollection: false */
+/* global i18n: false */
+/* global Whisper: false */
+
+
 // eslint-disable-next-line func-names
 (function () {
   window.Whisper = window.Whisper || {};
