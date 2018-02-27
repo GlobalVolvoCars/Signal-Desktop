@@ -416,7 +416,8 @@ app.on('ready', () => {
     }
 
     if (!locale) {
-      locale = loadLocale();
+      const appLocale = process.env.NODE_ENV === 'test' ? 'en' : app.getLocale();
+      locale = loadLocale({ appLocale, logger });
     }
 
     ready = true;
