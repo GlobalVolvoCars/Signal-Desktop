@@ -325,6 +325,14 @@ function showDebugLog() {
   }
 }
 
+function showSettings() {
+  if (!mainWindow) {
+    return;
+  }
+
+  mainWindow.webContents.send('show-settings');
+}
+
 function openReleaseNotes() {
   shell.openExternal(`https://github.com/signalapp/Signal-Desktop/releases/tag/v${app.getVersion()}`);
 }
@@ -450,6 +458,7 @@ function setupMenu(options) {
     setupWithImport,
     setupAsNewDevice,
     setupAsStandalone,
+    showSettings,
   });
   const template = createTemplate(menuOptions, locale.messages);
   const menu = Menu.buildFromTemplate(template);
