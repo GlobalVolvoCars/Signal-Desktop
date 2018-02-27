@@ -436,6 +436,7 @@ app.on('ready', () => {
 });
 
 function setupMenu(options) {
+  const { platform } = process;
   const menuOptions = Object.assign({}, options, {
     development,
     showDebugLog,
@@ -445,6 +446,7 @@ function setupMenu(options) {
     openNewBugForm,
     openSupportPage,
     openForums,
+    platform,
     setupWithImport,
     setupAsNewDevice,
     setupAsStandalone,
